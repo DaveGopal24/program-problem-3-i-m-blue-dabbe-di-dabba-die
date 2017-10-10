@@ -21,9 +21,9 @@ void main() {
 
 	a = x / 100; // This first digit
 	
-	b = (x - (a * 100)) / 10; // This is the second digit
+	b = ((x / 10) % 10); // This is the second digit
 	
-	c = ((x - (a * 100)) - (b * 10)); // This is the third digit
+	c = (x % 10); // This is the third digit
 	
 
 	if (a < b && b < c){ // This checks if the first digit is smaller then the second and if the second is smaller than the third
